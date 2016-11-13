@@ -1,0 +1,33 @@
+<?php
+#sync lms and tms passwords with the intranet password
+$qual=isset($_POST['empid'])?" and i.empid=".$_POST['empid']:NULL;
+//$sql_sync_wiki="update iztwiki.users u join intranet_db.login l set u.password=l.pass where u.empid=l.emp_id";
+$sql_sync_eds="update intranet_db.login l join iztwiki.users i set l.pass=i.password where l.emp_id=i.empid ".$qual;
+
+$sql_sync_tms="update tms_lms.usertable u join iztwiki.users i  set u.password=i.password where u.empid=i.empid ".$qual;
+$sql_sync_ams="update ams.usertable u join iztwiki.users i set u.password=i.password where u.empid=i.empid ".$qual;
+if(isset($_POST['sync']))
+{
+$sql=$sql_sync_eds;
+if(!$result=mysql_query($sql))
+{
+die.mysql_error();
+}
+echo "passwords synced from eds to wiki intranet";
+
+$sql=$sql_sync_tms;
+if(!$result=mysql_query($sql))
+{
+die.mysql_error();
+}
+echo "passwords synced from wiki intranet to tms";
+$sql=$sql_sync_ams;
+if(!$result=mysql_query($sql))
+{
+die.mysql_error();
+}
+echo "passwords synced from wiki intranet to ams";
+}
+echo "<input type=\"text\" name=\"empid\" value=\"\">";
+echo "<input class=\"btn btn-warning\" id=\"btn\" type=\"Submit\" name=\"sync\" value=\"Synchronize passwords\">";
+?>

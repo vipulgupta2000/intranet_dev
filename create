@@ -1,0 +1,21 @@
+<?php
+// Display Categories as links
+$qual=NULL;
+$field_show=array('catname','description');
+$link="home.php?page=create&catname=";
+echo display_link('category',$qual,1,$field_show,$link);
+
+$catid=isset($_GET['catname'])?$_GET['catname']:1;
+//echo $catid;
+if(rowaccess($catid,'category','submit')==1 || $_SESSION['SESS_perm']=='admin')
+{createpage();
+}else
+{ echo "<h2>You do not have access to submit articles for this category</h2>";
+echo "<p><a href=\"javascript:history.go(-1)\"><big>Go Back to Application</big></a></p>";
+}
+
+
+
+
+?>
+

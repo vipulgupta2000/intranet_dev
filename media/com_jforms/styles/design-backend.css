@@ -1,0 +1,390 @@
+/**
+* Stylesheet for design view
+*
+* @version		$Id: design-backend.css 380 2010-04-22 12:07:35Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+*/
+.icon-48-jforms-design{
+	background-image: url('../images/icon-48-design.png'); 	
+}
+
+  /* Tooltips */
+.tip {
+   float: left;
+   background: #ffc;
+   border: 1px solid #D4D5AA;
+   padding: 5px;
+   max-width: 200px;
+}
+
+.tip-title {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: bold;
+   margin-top: -15px;
+   padding-top: 15px;
+   padding-bottom: 5px;
+   background: url('../images/design/selector-arrow.png') no-repeat;
+}
+
+.tip-text {
+   font-size: 100%;
+   margin: 0;
+}
+
+
+#workarea label.checkbox{
+	width:auto;
+	height:auto;
+}
+#workarea input.checkbox{
+	width:auto;
+	height:auto;
+}
+
+#workarea label{
+	float:left;
+	width:100px;
+	font-weight:bold;
+	padding:0px;
+	text-align:left;
+	color:black;
+}
+#workarea legend{
+	color:black;
+}
+#workarea input,#workarea textarea,#workarea select{
+	float:left;
+	width:150px;
+	padding:0px;
+}
+#workarea textarea{
+	height:32px;
+}
+
+#clist
+{
+	padding:0px;
+	margin:0px;
+	margin-top:0px;
+	height:980px;
+	
+}
+
+
+fieldset.radio-container{
+	float:left;
+}
+
+#clist li.element label,
+#clist li.element input,
+#clist li.element select,
+#clist li.element fieldset{
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+
+
+#clist li.element{
+	list-style: none;
+	margin:0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	color: black;
+	cursor: pointer;
+	display:block;
+	width:100%;
+	background-color: transparent;
+}
+
+#clist li.element:hover{
+	background-color:#dddddd;
+}
+
+
+#clist li.selected{
+	color:black;
+	background-color:#b4b4b4 !important;	
+}
+
+#clist li.error{
+	color:white;
+	background-color:#ee0000 !important;	
+	border-bottom:1px solid white;
+}
+
+
+#clist li.selected legend{
+	color:black;
+}
+
+#clist li.selected label{
+	color:black;
+}
+.drag-handle{
+	cursor:move;
+	width:11px;
+	margin:0px;
+	padding:0px;
+	background-image:url('../images/design/move.png');
+
+	float:left;
+	position:relative;
+	visibility:hidden;
+	margin-right:3px;
+	
+}
+
+#clist .deleteButton
+{
+	width:32px;
+	height:32px;
+	border:0px solid white;
+	background-color:transparent;
+	background-image:url('../images/design/delete.gif');
+}
+
+#container{
+	width:90%;
+	border:1px solid black;	
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+#side-bar{
+	vertical-align:top;
+	width:402px;
+	float:left;
+}
+#workarea-td{
+
+	border:1px solid black;
+	
+	padding:0;
+	/*background-image:url('../images/design/bg.gif');*/
+	margin-left:5px;
+	float:left;
+
+}
+#workarea{
+	
+	height:1000px;
+	width:500px;
+	padding:0px;
+	text-align:left;
+	background-color:white;
+	/*background-image:url('../images/design/bg.gif');*/
+	/*overflow:scroll;*/
+}
+
+
+
+/* Tabbed interface */
+div.tab-button{
+	
+	float:left;
+	font-size:120%;
+	text-align:center;
+	
+	text-align:center;	
+	padding-top:10px;
+	width:134px;
+	height:20px;
+	
+	color:white;
+	border:0;
+	border-bottom:0px solid black;
+	background-image:url('../images/design/inactive.png');
+	cursor:pointer;
+		
+}
+
+div.tab-body{
+	display:none;
+	border:3px solid black;
+	border-top:0;
+	width:376px;
+	padding:10px;
+	padding-top:30px;
+}
+
+
+div.active-tab-button{
+	background-image:url('../images/design/active.png');
+	color:black;
+}
+
+
+
+/* Form tab settings */
+div#tab-form{
+	padding-top:10px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	height:1000px;
+		
+}
+
+/* Element tab settings */
+div#tab-element{
+	padding-top:10px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	height:1000px;
+}
+div#tab-element #tab-element-container{
+
+	border:1px solid gray;
+	padding-bottom:10px;
+}
+#tab-element input[type=checkbox]{
+	width:auto;
+}
+#tab-element h3{
+	padding:2px;
+	padding-top:1px;
+	background-color:#006699;
+	border-bottom:1px solid navy;
+	color:white;
+	margin:0;
+	height:20px;
+}
+
+#tab-element #lock-toggle{
+	float:right;
+	padding:0px;
+	margin:0;
+	width:22px;
+	height:22px;
+	
+	background-repeat:no-repeat;
+	background-position:center center;
+	
+}
+#tab-element #lock-toggle.locked{
+	background-image:url('../images/design/locked.png');
+}
+
+#tab-element #lock-toggle.unlocked{
+	background-image:url('../images/design/unlocked.png');
+}
+
+
+/* Toolbar tab settings */
+div#tab-toolbar{
+	margin:0px;
+	padding-top:10px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	height:1000px;
+}
+div#tab-toolbar ul{padding-top:10px;padding-bottom:10px;}
+div#tab-toolbar li{
+	list-style: none outside none;
+	width:100%;
+	height:32px;
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;
+}
+
+div#tab-toolbar .pane-sliders .content {
+	background-color: white;
+}
+
+/* End of tabbed interface */
+
+div.clear{clear:both;}
+
+
+
+img.resize-handle{
+	border:0;
+	cursor:se-resize;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:16px;
+	height:16px;
+	background-image:url('../images/design/corner.gif');
+	visibility:hidden;
+}
+div.delete-button{
+	float:right;
+	background-image:url('../images/design/delete.gif');
+	width:22px;
+	height:22px;
+	visibility:hidden;
+}
+
+div.edit-button{
+	float:right;
+	background-image:url('../images/design/edit.gif');
+	width:22px;
+	height:22px;
+	visibility:hidden;
+}
+
+div.controls{
+	background-repeat:no-repeat;
+	background-position:center left;
+	padding-left:35px;
+	padding-top:8px;
+	width:200px;
+	height:24px;
+	font-weight:bold;
+	background-color:white;
+	cursor:move;
+	text-align:left;
+	margin:auto;
+}
+
+table.ppage label{
+	float:left;
+	width:120px;
+	font-weight:bold;
+	padding:1px;
+	font-size:11px;
+	text-align:left;
+	
+}
+table.ppage input,table.ppage select{
+	float:left;
+	width:200px;
+	padding:1px;
+	margin-bottom:5px;
+	font-size:11px;
+}
+table.ppage
+{
+	border-top:1px dashed silver;
+	border-bottom:1px dashed silver;
+	
+	padding:5px;
+	padding-top:10px;
+	display:none;
+}
+
+#workarea .deleteButton
+{
+	float:right;
+	width:20px;
+}
+#workarea label.radio{
+	width:auto;
+	height:auto;
+}
+#workarea input.radio{
+	width:auto;
+	height:auto;
+}

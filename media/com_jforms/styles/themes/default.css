@@ -1,0 +1,71 @@
+/**
+* dark form frontend stylesheet
+*
+* @version		$Id: default.css 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+*/
+
+div.jform{
+	margin-top:15px;
+	padding:10px;
+}
+
+table.jform{
+	width:100%;
+}
+
+div.jform img{
+	float:none;
+	border:0;
+}
+
+div.jform h2{
+}
+
+div.jform div.error-message
+{
+	color:red;
+	font-weight:bold;
+	float:right;
+}
+div.jform. div.label-error{
+	color:red;
+}
+iv.jform. div.input-error{
+	border:2px solid red;
+}
+
+div.jform form label{
+	margin-bottom:15px;
+	margin-right:5px;
+	float:left;
+}
+
+div.jform form fieldset{
+	margin-bottom:15px;
+	padding:25px 10px 10px 10px;
+}
+div.jform form input,
+div.jform form select,
+div.jform form textarea,
+div.jform form fieldset{
+	margin-bottom:15px;
+	float:left;
+}
+
+div.jform form input.radio,
+div.jform form label.radio{
+	float:none;
+}
+
+div.jform form select.day{width:60px;margin:0px 5px 0px 5px;}
+div.jform form select.month{width:100px;margin:0px 5px 0px 5px;}
+div.jform form select.year{width:60px;margin:0px 5px 0px 5px;}
+
+
+div.jform form div.clear{
+	clear:left;
+}

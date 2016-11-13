@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Advanced search parameters for Radio plugin
+*
+* @version		$Id: search.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Radio plugin search parameters</name>
+	<params>
+		<param name="keyword_mode" type="list" default="or" label="Keyword Mode" description="TEXTBOXKEYWORDMODEDESC">		
+			<option value="Any">Any word</option>
+			<option value="All">All words</option>
+			<option value="Exact">Exact phrase</option>
+		</param>
+		<param name="keywords" type="text" size="25" default="" label="Keywords" description="TEXTBOXKEYWORDDESC" />
+		<param name="mode" type="list" default="or" label="Mode" description="TEXTBOXMODEDESC">		
+			<option value="or">Or</option>
+			<option value="and">And</option>
+		</param>
+	</params>
+</form>

@@ -1,0 +1,31 @@
+create Employee
+Employee ID
+Name
+Father's Name
+Permanent Address
+Date Of Birth
+Date of Joining
+
+
+create/update Package
+Employee ID
+Name
+Date of Joining
+CTC
+Monthly
+
+Basic
+
+HRA
+Other allowance
+Conveyance
+Education
+PLI
+AnnualBonus
+
+
+
+
+Payroll
+
+

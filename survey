@@ -1,0 +1,36 @@
+<?php
+
+
+if(isset($_POST['OK'])){
+$tbl="survey";
+$time=time();
+
+$sql="insert into $tbl (user,time,q1,q2,q3,q4,q5,q6,q7,q8,comment) values('$_SESSION[SESS_uname]',$time,'$_POST[q1]','$_POST[q2]','$_POST[q3]','$_POST[q4]','$_POST[q5]','$_POST[q6]','$_POST[q7]','$_POST[q8]','$_POST[comment]')";
+
+if(!$result=mysql_query($sql))
+		{ die(mysql_error());
+		}
+echo "<h3>Survey has been Submitted. Thank you for your time.</h3>"; 
+}
+else{
+
+?>
+
+<br>
+<table cellpadding="10" >
+<tr><td><h2>Employee Satisfaction Survey</h2></td></tr>
+<tr><td>Question:</td><td>Very Satisfied</td><td>Satisfied</td><td>Neutral</td><td>Dis-Satisfied</td><td>Very Dis-Satisfied</td></tr>
+<tr><td>I am satisfied with the salary I get in the organization:</td><td><input type=radio name=q1 value=1 ></td><td><input type=radio name=q1 value=2></td><td><input type=radio name=q1 value=3></td><td><input type=radio name=q1 value=4></td><td><input type=radio name=q1 value=5></td></tr>
+<tr><td>I am satisfied with the hike organization offers on appraisal.:</td><td><input type=radio name=q2 value=1 ></td><td><input type=radio name=q2 value=2></td><td><input type=radio name=q2 value=3></td><td><input type=radio name=q2 value=4></td><td><input type=radio name=q2 value=5></td></tr>
+<tr><td>I believe that organization can provide me career growth:</td><td><input type=radio name=q3 value=1 ></td><td><input type=radio name=q3 value=2></td><td><input type=radio name=q3 value=3></td><td><input type=radio name=q3 value=4></td><td><input type=radio name=q3 value=5></td></tr>
+<tr><td>I am Provided enough opportunities of learning through work assignments:</td><td><input type=radio name=q4 value=1 ></td><td><input type=radio name=q4 value=2></td><td><input type=radio name=q4 value=3></td><td><input type=radio name=q4 value=4></td><td><input type=radio name=q4 value=5></td></tr>
+<tr><td>Organization provides me healthy work-Life balance:</td><td><input type=radio name=q5 value=1 ></td><td><input type=radio name=q5 value=2></td><td><input type=radio name=q5 value=3></td><td><input type=radio name=q5 value=4></td><td><input type=radio name=q5 value=5></td></tr>
+<tr><td>I am satisfied with work location.:</td><td><input type=radio name="q6" value="1" ></td><td><input type=radio name="q6" value="2"></td><td><input type="radio" name="q6" value="3"></td><td><input type="radio" name="q6" value="4"></td><td><input type="radio" name="q6" value="5"></td></tr>
+<tr><td>I am satisfied with the work environment:</td><td><input type=radio name=q7 value=1 ></td><td><input type=radio name=q7 value=2></td><td><input type=radio name=q7 value=3></td><td><input type=radio name=q7 value=4></td><td><input type=radio name=q7 value=5></td></tr>
+<tr><td>I am satisfied with Organization’s policy and procedures:</td><td><input type=radio name=q8 value=1 ></td><td><input type=radio name=q8 value=2></td><td><input type=radio name=q8 value=3></td><td><input type=radio name=q8 value=4></td><td><input type=radio name=q8 value=5></td></tr>
+</table>
+<b>Comments:</b>
+<textarea name="comment" rows="4" cols="50">&nbsp;</textarea><br/>
+<input type="submit" name="OK" value="submit">
+
+<?php } ?>

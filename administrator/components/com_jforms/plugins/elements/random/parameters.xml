@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for IP plugin
+*
+* @version		$Id: parameters.xml 381 2010-04-22 12:26:57Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Random plugin parameters</name>
+	<params>
+		<param name="hash" class='id' description='JFORMSPLUGINFIELDID'  label="ID" type="text" valueType='string' default='' translate='0' />
+		<param name="label" label="Label" description='JFORMSPLUGINFIELDLABEL' type="text" default='Random 1' valueType='string' translate='1' />
+		<param name="prefix" description='JFORMRANDOMPREFIX' label="Prefix" type="text" default='' valueType='string' translate='0' />
+		<param name="suffix" description='JFORMRANDOMSUFFIX' label="Suffix" type="text" default='' valueType='string' translate='0' />
+		<param name="validCharacters" description='JFORMRANDOMSEED' label="Vaild characters" type="text" default='0123456789abcdfghjkmnpqrstvwxyz' valueType='string' translate='0' />
+		<param name="length" description='JFORMRANDOMLENGTH' label="Length" type="text" default='5' valueType='integer' translate='0' />
+	</params>
+</form>

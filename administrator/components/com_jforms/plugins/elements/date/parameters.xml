@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Date plugin
+*
+* @version		$Id: parameters.xml 381 2010-04-22 12:26:57Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Date plugin parameters</name>
+	<params>
+		<param name="hash" class='id' description='JFORMSPLUGINFIELDID'  label="ID" type="text" valueType='string' default='' translate='0' />
+		<param name="label" description='JFORMSPLUGINFIELDLABEL' label="Label" type="text" default='Date' valueType='string' translate='1' />	
+		<param name="css" description='JFORMSPLUGINFIELDCSS' label="CSS Class" type="text" default='jfdate' valueType='string' translate='0' />
+		<param name="useCss" description='JFORMSPLUGINFIELDUSECSS' label="Style using CSS only" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="required" description='JFORMSPLUGINFIELDREQUIRED' label="Required" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="format" description='JFORMSDATEFORMAT' label="Format" type="list" default='DD/MM/YYYY' valueType='string' translate='0'>
+			<option value='YYYY/MM/DD'>YYYY/MM/DD</option>
+			<option value='YYYY/DD/MM'>YYYY/DD/MM</option>
+			<option value='DD/MM/YYYY'>DD/MM/YYYY</option>
+			<option value='MM/DD/YYYY'>MM/DD/YYYY</option>
+		</param>
+		<param name="startYear" description='JFORMSDATESTART' label="Start year" type="text" default='1950' valueType='integer' translate='0' />
+		<param name="span" description='JFORMSDATESPAN' type="list" label="Span" default='0' valueType='string' translate='0'>
+			<option value='10'>10</option>
+			<option value='25'>25</option>
+			<option value='50'>50</option>
+			<option value='75'>75</option>
+			<option value='100'>100</option>
+			<option value='0'>Till present</option>
+			<option value='-1'>Other</option>
+		</param>
+		<param name="ospan" type="text" description='JFORMSDATESSPAN' label="Specify Span" default='' valueType='string' translate='0' />
+		<param name="lh" type="hidden" valueType='integer' default='16' translate='0' />
+		<param name="lw" type="hidden" valueType='integer' default='70' translate='0' />
+		<param name="defaultValue" type="hidden" valueType='string' default='4\n5\n1985' translate='0' />
+	</params>
+</form>

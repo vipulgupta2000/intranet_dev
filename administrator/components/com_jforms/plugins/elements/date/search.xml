@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Date plugin
+*
+* @version		$Id: search.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Date plugin search parameters</name>
+	<params>
+		<param name="from" type="calendar" default="" label="From" description="From" />
+		<param name="to" type="calendar" default="" label="To" description="To" />
+		<param name="mode" type="list" default="Or" label="Mode" description="MAILSENDADMIN">		
+			<option value="or">Or</option>
+			<option value="and">And</option>
+		</param>
+
+	</params>
+</form>

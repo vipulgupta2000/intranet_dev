@@ -1,0 +1,29 @@
+/**
+* Stylesheet for records view (IE)
+*
+* @version		$Id: records_ie-backend.css 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+*/
+.search-pane-list-handle{
+	border-right:1px solid silver;
+	height:22px;
+	float:left;
+	width:22px;
+	background-repeat:no-repeat;
+	background-image:url('move.jpg');
+	
+}
+
+ul#search-pane-list li{
+	width:100%;
+}
+
+ul#search-pane-list{
+	position:static;
+	width:100%;
+	margin:0;
+	padding:0;
+}

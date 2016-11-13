@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>JM-simple1</name>
+	<version>1.0.0</version>
+	<creationDate>11/2009</creationDate>
+	<author>Chetan Madaan</author>
+	<authorEmail>info@jm-experts.com</authorEmail>
+	<authorUrl>http://www.jm-experts.com</authorUrl>
+	<copyright>Jm-Experts!</copyright>
+	<license>Free Of Use</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/arrow.png</filename>
+		<filename>images/banner_01.jpg</filename>
+		<filename>images/banner_02.jpg</filename>
+		<filename>images/box_bg.gif</filename>
+		<filename>images/box_h3.png</filename>
+		<filename>images/but.gif</filename>
+		<filename>images/flashnews.png</filename>
+		<filename>images/flashnews_l.png</filename>
+		<filename>images/footer_bg.png</filename>
+		<filename>images/headerimg.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/input_login.png</filename>
+		<filename>images/inputbox.png</filename>
+		<filename>images/menu_arrow.gif</filename>
+		<filename>images/menu_arrow_hover.gif</filename>
+		<filename>images/page_bg.png</filename>
+		<filename>images/pillmenu.png</filename>
+		<filename>images/search_but.gif</filename>
+		<filename>images/t_menu_divider.gif</filename>
+		<filename>images/t_menu_hover.png</filename>
+		<filename>images/top.png</filename>
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+	</files>
+	<positions>
+		<position>user4</position>            
+		<position>user3</position>            
+		<position>left</position>             
+		<position>top</position>          
+		<position>right</position>            
+		<position>debug</position>       
+	</positions>
+	<languages>
+		<language tag="en-GB">en-GB.JM-simple1.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.JM-simple1.ini</language>
+		</languages>
+    </administration>
+</install>

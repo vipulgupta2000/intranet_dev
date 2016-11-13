@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for checkbox plugin
+*
+* @version		$Id: checkbox.xml 268 2009-08-27 20:42:19Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+	<name>checkbox</name>
+	<description>CHECKBOXPLUGINDESCRIPTION</description>
+	<files>
+		<file type='jsEntryPoint'>checkbox.js</file>
+		<file type='phpEntryPoint'>checkbox.php</file>
+		<file type='icon'>checkbox.png</file>
+	</files>
+	<storage type='textfield' size='254' requirefs='false' />
+</JFormPlugin>

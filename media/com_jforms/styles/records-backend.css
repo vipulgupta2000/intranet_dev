@@ -1,0 +1,162 @@
+/**
+* Stylesheet for records view
+*
+* @version		$Id: records-backend.css 367 2010-03-27 01:26:28Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+*/
+.icon-48-jforms-records{
+	background-image: url('../images/icon-48-records.png'); 	
+}
+
+
+label{
+
+	float:left;
+	width:120px;
+	font-weight:bold;
+	margin-bottom:5px;
+	margin-left:5px;
+
+}
+
+#reload-button{
+	
+	margin-top:10px;
+	font-weight:bold;
+	width:100%;
+	height:25px;
+
+}
+
+.export-button{
+	font-weight:bold;
+	width:100%;
+	height:25px;
+	margin-top:10px;
+	background-color:gold;
+}
+
+#delete-button{
+
+	font-weight:bold;
+	width:100%;
+	height:25px;
+	margin-top:10px;
+}
+
+#record_per_page{
+	
+	width:50px;
+}
+
+#current_page{
+	width:50px;
+}
+
+/* Tabbed interface */
+div.tab-button{
+
+	float:left;
+	font-size:120%;
+	text-align:center;
+	
+	text-align:center;	
+	padding-top:10px;
+	width:150px;
+	height:20px;
+	
+	color:white;
+	border:0;
+
+	background-image:url('../images/records/inactive.png');
+	cursor:pointer;
+		
+}
+
+div.tab-body{
+	border:3px solid black;
+	border-top:0;
+}
+
+
+div.active-tab-button{
+	background-image:url('../images/records/active.png');
+	color:black;
+}
+
+
+
+
+/* Form tab settings */
+div#tab-export{
+
+
+
+	padding-top:40px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+
+	height:1000px;
+}
+
+div#tab-filters{
+	padding:10px;
+
+	padding-top:40px;
+	margin:0;
+	
+	border-top:0;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+
+	height:1000px;
+}
+
+
+/* End of tabbed interface */
+
+
+.search-pane-list-handle{
+	border-right:1px solid silver;
+	height:22px;
+	float:left;
+	width:22px;
+	background-repeat:no-repeat;
+	background-image:url('../images/records/move.jpg');
+	
+}
+ul#search-pane-list li{
+	width:99%;
+}
+
+ul#search-pane-list{
+
+	list-style:none;
+	padding:0;
+	position:relative;
+}
+
+.search-pane-list-check ,
+.search-pane-list-check input{
+	float:right;
+	width:20px;
+	margin-right:10px;
+}
+
+
+div#export .button{
+	float:right;
+	font-size:120%;
+}
+
+
+div#loadingDiv div.processing{
+		background-image:url('../images/records/ajax-loader.gif');
+		background-repeat: no-repeat;
+		background-position: center center;
+}

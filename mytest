@@ -1,0 +1,8 @@
+<?php
+$cond="catid=1";
+echo "<a href=home.php?page=search&cond=".urlencode($cond)." >click me</a>";
+//echo "<a href=home.php?page=search&cond=".$cond." >click me</a>";
+$qual='1';
+	
+echo "qual is ".$qual;
+?>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for radio plugin
+*
+* @version		$Id: radio.xml 268 2009-08-27 20:42:19Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+	<name>radio</name>
+	<description>RADIOPLUGINDESCRIPTION</description>
+	<files>
+		<file type='jsEntryPoint'>radio.js</file>
+		<file type='phpEntryPoint'>radio.php</file>
+		<file type='icon'>radio.png</file>
+	</files>
+	<storage type='textfield' size='254' requirefs='false' />
+</JFormPlugin>

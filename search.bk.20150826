@@ -1,0 +1,25 @@
+<?php
+
+
+$search=isset($_POST['string'])?$_POST['string']:NULL;
+
+$cond=isset($_GET['cond'])?$_GET['cond']." and ":NULL;
+//echo $cond;
+	//starts
+	$cat=qualaccess('category');
+	if(isset($cat) && $cat=="admin")
+	{
+	//echo " You are an admin";
+	//call search function;
+	datasearch($search,$cond);
+	}elseif(isset($cat))
+	{$qual=$cond.' catid in ('.$cat. ") and ";
+	//call search function;
+	datasearch($search,$qual);
+	}else
+	{//echo " You do not have access to Search ";
+	}
+	//ends
+	
+
+?>

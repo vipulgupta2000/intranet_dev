@@ -1,0 +1,21 @@
+<?php
+
+$sql_result="select (6-avg(q1))*20 q1,(6-avg(q2))*20 q2,(6-avg(q3))*20 q3,(6-avg(q4))*20 q4,(6-avg(q5))*20 q5,(6-avg(q6))*20 q6,(6-avg(q7))*20 q7,(6-avg(q8))*20 q8 from survey";
+$result_data=mysql_query($sql_result);
+
+
+echo "<div id=\"bar\">";
+while($row=mysql_fetch_array($result_data))
+{
+//echo $status['qq'];
+echo "<h7>I am satisfied with the salary I get in the organization:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-info\" style=\"width: ".$row['q1']."%\"><h7>".$row['q1']." %</h7></div></div>";
+echo "<h7>I am satisfied with the hike organization offers on appraisal.:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-info\" style=\"width: ".$row['q2']."%\" ><h7>".$row['q2']." %</h7></div></div>";
+echo "<h7>I believe that organization can provide me career growth:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-warning\" style=\"width: ".$row['q3']."%\" ><h7>".$row['q3']." %</h7></div></div>";
+echo "<h7>I am Provided enough opportunities of learning through work assignments:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-danger\" style=\"width: ".$row['q4']."%\" ><h7>".$row['q4']." %</h7></div></div>";
+echo "<h7>Organization provides me healthy work-Life balance:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-primary\" style=\"width: ".$row['q5']."%\" ><h7>".$row['q5']." %</h7></div></div>";
+echo "<h7>I am satisfied with work location.:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-success\" style=\"width: ".$row['q6']."%\" ><h7>".$row['q6']." %</h7></div></div>";
+echo "<h7>I am satisfied with the work environment:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-warning\" style=\"width: ".$row['q7']."%\" ><h7>".$row['q7']." %</h7></div></div>";
+echo "<h7>I am satisfied with Organization’s policy and procedures:</h7><div class=\"progress\"><div class=\"progress-bar progress-bar-danger\" style=\"width: ".$row['q8']."%\" ><h7>".$row['q8']." %</h7></div></div>";
+}
+echo "</div>";
+?>

@@ -1,0 +1,15 @@
+#top
+{
+background:url('../images/top.png') repeat-x;
+height:80px;
+width:auto;
+}
+
+#middle_left
+{
+background:transparent url('../images/mid_lmid.png') center center repeat-y;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important
+}	

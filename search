@@ -1,0 +1,34 @@
+<?php
+
+if(isset($_POST['string']))
+{
+$search=isset($_POST['string'])?$_POST['string']:NULL;   // old line only look for POST method
+}
+else if(isset($_GET['string']))			// added for GET method
+{
+$search=isset($_GET['string'])?$_GET['string']:NULL;
+}
+
+
+echo "<input type=\"text\" name=\"string\" value=\"$search\" />";
+
+$cond=isset($_GET['cond'])?$_GET['cond']." and ":NULL;
+echo $cond;
+	//starts
+	$cat=qualaccess('category');
+	if(isset($cat) && $cat=="admin")
+	{
+	//echo " You are an admin";
+	//call search function;
+	datasearch($search,$cond);
+	}elseif(isset($cat))
+	{$qual=$cond.' catid in ('.$cat. ") and ";
+	//call search function;
+	datasearch($search,$qual);
+	}else
+	{//echo " You do not have access to Search ";
+	}
+	//ends
+	
+
+?>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for List plugin
+*
+* @version		$Id: parameters.xml 381 2010-04-22 12:26:57Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>List plugin parameters</name>
+	<params>
+		<param name="hash" class='id' description='JFORMSPLUGINFIELDID'  label="ID" type="text" valueType='string' default='' translate='0' />
+		<param name="label" description='JFORMSPLUGINFIELDLABEL' label="Label" type="text" default='List' valueType='string' translate='1' />
+		<param name="css" description='JFORMSPLUGINFIELDCSS' label="CSS Class" type="text" default='jflist' valueType='string' translate='0' />
+		<param name="useCss" description='JFORMSPLUGINFIELDUSECSS' label="Style using CSS only" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="elements" cols="25" rows="10" description='JFORMSPLUGINFIELDELEMENTS' type="textarea" label="Options" default='Option 1\nOption 2\nOption 3' valueType='string' translate='1' />
+		<param name="multi" description='JFORMSLISTMULTI' label="Multi-Select" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="required" description='JFORMSPLUGINFIELDREQUIRED' label="Required" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="commonList"  description='JFORMSLISTCOMMONLIST' label="Common List" type="list" default='Manual' valueType='string' translate='0'>
+			<option value='Manual'>Manual</option>
+			<option value='states'>US States</option>
+			<option value='countries'>Countries</option>
+		</param>
+		<param name="lh" type="hidden" valueType='integer' default='20' translate='0' />
+		<param name="lw" type="hidden" valueType='integer' default='50' translate='0' />
+		<param name="ch" type="hidden" valueType='integer' default='20' translate='0' />
+		<param name="cw" type="hidden" valueType='integer' default='70' translate='0' />
+		<param name="defaultValue" type="hidden" valueType='string' default='' translate='1' />
+	</params>
+</form>

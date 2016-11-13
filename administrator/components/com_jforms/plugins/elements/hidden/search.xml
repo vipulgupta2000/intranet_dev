@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Advanced search parameters for Random plugin
+*
+* @version		$Id: search.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Hidden plugin search parameters</name>
+	<params><param name="value" type="text" size="15" default="" label="Value" description="HIDDENVALUEDESC" /></params>
+</form>

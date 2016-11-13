@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>WM_06_J15</name>
+	<version>1.1.0</version>
+	<creationDate>06/2010</creationDate>
+	<author>Falcione Gianluca edited http://sitiweb.valloshow.it</author>
+	<authorEmail>template@webmedie.dk</authorEmail>
+	<authorUrl>http://www.webmedie.dk</authorUrl>
+	<copyright>Webmedie</copyright>
+	<license>GNU/GPL</license>
+	<description>Change the principal photo is easy, you must only change this photo: templates/wm_06_j15/intro.jpg - Default width:912, height:363
+    Per inserire la tua immagine nell animazione flash basta cambiarla su questo percorso templates/wm_06_j15/intro.jpg - Con dimensioni consigliate 912x363
+    </description>
+  <files>
+    <filename>index.php</filename>
+    <filename>intro.swf</filename>
+    <filename>intro.jpg</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>params.ini</filename>
+    <filename>images/h3.png</filename>
+    <filename>images/body_bg.jpg</filename>
+	<filename>images/footer_bg.jpg</filename>
+	<filename>images/header_bg.jpg</filename>
+	<filename>images/indent1.png</filename>
+	<filename>images/indent2.png</filename>
+	<filename>images/indent3.png</filename>
+	<filename>images/indent4.png</filename>
+	<filename>images/index.html</filename>
+	<filename>images/li.png</filename>
+	<filename>images/lo_l.jpg</filename>
+	<filename>images/menu_row.png</filename>
+	<filename>images/pillmenu_l_bg.jpg</filename>
+	<filename>images/pillmenu_r_bg.jpg</filename>
+	<filename>images/spacer.png</filename>
+	<filename>images/topw_bg.jpg</filename>
+    <filename>css/index.html</filename>
+    <filename>css/template.css</filename>
+    <filename>css/editor.css</filename>
+    <filename>css/ie7.css</filename>
+  </files>
+<positions>
+		<position>user3</position>
+        <position>rounded</position>
+        <position>footer</position>
+        <position>debug</position>
+        <position>left</position>
+        <position>right</position>
+        <position>top</position>
+        <position>head</position>
+</positions>
+</install>

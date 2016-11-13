@@ -1,0 +1,17 @@
+Change history:
+Version 1.1 ( 22/5/2014)
+	>Adding the New Editor functionality
+	>Fixed new user addition functionality
+		Steps to fix
+			Add a new field id int(10) in users table make it auto increment and primary;
+			update the field id in field table for the same 	
+	>Fixed time gap of 5.5 hours
+		Changed utils.php 
+	>
+	
+v1.2:
+lib/utils.php :extractimage function updated for returning image as variable
+intranet.php: >added javascipt for resizing the images.
+			  >Created carousel like view for latest articles
+			  >modified the sql to pull use categories 3,7,and 8 only for display on front
+css/templateblue.css: added options for carousel glyphicon background image removal

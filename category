@@ -1,0 +1,19 @@
+<div id="middle_right_top">
+<h2>Enter Time Sheet</h2>
+</div>
+
+<?php
+$tbl=$_GET['page'];
+//$tbl='appraisal_master';
+$field_edit=array('catname','access','submit','modify','search','description');
+$field_show=array();
+$qual=NULL;
+if(isset($_POST['modify']) || isset($_POST['update']))
+{
+echo input($tbl,$qual,$field_edit,$field_show);
+}else
+{
+echo display($tbl,$qual,1,$field_show);
+addrow($tbl);
+}
+?>

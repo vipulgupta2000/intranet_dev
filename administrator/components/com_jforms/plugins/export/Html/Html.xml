@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Database plugin
+*
+* @version		$Id: Html.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='export'>
+<name>Html</name>
+<description>Exports Data to HTML</description>
+<format>html</format>
+</JFormPlugin>

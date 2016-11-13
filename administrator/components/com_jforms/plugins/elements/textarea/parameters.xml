@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Textarea plugin
+*
+* @version		$Id: parameters.xml 381 2010-04-22 12:26:57Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Textarea plugin parameters</name>
+	<params>
+		<param name="hash" class='id' description='JFORMSPLUGINFIELDID'  label="ID" type="text" valueType='string' default='' translate='0' />
+		<param name="label" description='JFORMSPLUGINFIELDLABEL' label="Label" type="text" default='Textarea' valueType='string' translate='1' />
+		<param name="css" description='JFORMSPLUGINFIELDCSS' label="CSS Class" type="text" default='jftextarea' valueType='string' translate='0' />
+		<param name="useCss" description='JFORMSPLUGINFIELDUSECSS' label="Style using CSS only" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="required" description='JFORMSPLUGINFIELDREQUIRED' label="Required" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="minLength" description='JFORMSTEXTAREAMINLENGTH' label="Minimum length" type="text" default='10' valueType='integer' translate='0' />
+		<param name="maxLength" description='JFORMSTEXTAREAMAXLENGTH' label="Maximum length" type="text" default='500' valueType='integer' translate='0' />
+		<param name="sizeMode" description='JFORMSTEXTAREASIZEMODE' type="list" label="Size mode" default='css' valueType='string' translate='0'>
+			<option value='html'>Columns and Rows</option>
+			<option value='css'>Pixels</option>
+		</param>
+		<param name="cols" label="Columns" description='JFORMSTEXTAREAROWS' type="text" default='10' valueType='integer' translate='0' />
+		<param name="rows" label="Rows" description='JFORMSTEXTAREACOLS' type="text" default='10' valueType='integer' translate='0' />
+		<param name="lh" type="hidden" valueType='integer' default='16' translate='0' />
+		<param name="lw" type="hidden" valueType='integer' default='70' translate='0' />
+		<param name="ch" type="hidden" valueType='integer' default='100' translate='0' />
+		<param name="cw" type="hidden" valueType='integer' default='200' translate='0' />
+		<param name="defaultValue" type="hidden" valueType='string' default='' translate='1' />
+	</params>
+</form>

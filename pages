@@ -1,0 +1,20 @@
+<div id="middle_right_top">
+<h2>Enter Time Sheet</h2>
+</div>
+
+<?php
+
+$tbl=$_GET['page'];
+
+$field_edit=array('catid','access','flag');
+$field_show=array('id','catid','status','author','page_filter','access','flag');
+$qual=NULL;
+if(isset($_POST['modify']) || isset($_POST['update']))
+{
+echo input($tbl,$qual,$field_edit,$field_show);
+}else
+{
+echo display($tbl,$qual,1,$field_show);
+addrow($tbl);
+}
+?>

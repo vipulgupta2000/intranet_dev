@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for XLS Export plugin
+*
+* @version		$Id: param.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>XLS plugin parameters</name>
+	<params>
+		<param name="exportRange" type="list" default="visible" label="What to Export" description="EXPORTRANGE">		
+			<option value="visible">Export Visible Records</option>
+			<option value="selected">Export Selected Records</option>
+			<option value="pages">Export All Pages</option>
+			<option value="all">Export All Records</option>
+		</param>
+		
+		
+		<!-- Hidden stuff [ Don't edit ] constant for all export plugins -->
+		<param name="name" type="hidden" default="" />
+		<param name="fid" type="hidden" default="" />
+		<param name="keyword" type="hidden" default="" />
+		<param name="fields" type="hidden" default="" />
+		<param name="labels" type="hidden" default="" />
+		<param name="start" type="hidden" default="" />
+		<param name="rpp" type="hidden" default="" />
+		<param name="page" type="hidden" default="" />
+		<param name="pageCount" type="hidden" default="" />
+		<param name="recordCount" type="hidden" default="" />
+		<param name="ids" type="hidden" default="" />
+		
+	</params>
+</form>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Mail plugin
+*
+* @version		$Id: param.xml 29 2008-12-09 07:13:01Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Mail plugin parameters</name>
+	<params>
+		<param name="SendAdmin" type="radio" default="1" label="Send notification to Administrators on new entries" description="MAILSENDADMIN">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="SendUser" type="radio" default="1" label="Send User a confirmation message" description="MAILSENDUSER">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="AdminMail" type="textarea" rows="5" cols="30" default="" label="Administartors E-Mail" description="MAILADMINMAIL" />
+		<param name="AdminText" type="textarea" rows="5" cols="30"  default="A new entry has been added to {FORM_NAME} and contains the following data {ENTRY_DATA}" label="Administrator Notification Message Format" description="MAILFORMATADMIN" />
+		<param name="ConfrimText" type="textarea" rows="5" cols="30"  default="Your submission has been successfully received, Thank you" label="User Confirmation Message" description="MAILFORMATUSER" />
+
+	</params>
+</form>

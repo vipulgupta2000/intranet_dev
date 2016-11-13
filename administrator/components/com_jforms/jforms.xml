@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML Setup file
+*
+* @version		$Id: jforms.xml 387 2010-05-22 10:45:27Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>JForms</name>
+	<creationDate>May 22nd, 2010</creationDate>
+	<author>Mostafa Muhammad</author>
+	<authorEmail>mostafa.mohmmed@gmail.com</authorEmail>
+	<authorUrl>http://jforms.mosmar.com/</authorUrl>
+	<copyright>Copyright (C) 2008 - 2010 Mostafa Muhammad. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>0.7 RC1</version>
+	<description>JForms is an extensible , plug-in based Forms component that works natively on 1.5 Framework and allows single-screen form design while complying with accessibility standards as far as possible.&lt;br /&gt;JForms is my Google Summer of Code 2008 Project.</description>	
+
+
+	<files folder="components/com_jforms">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>jforms.php</filename>
+			<filename>router.php</filename>
+
+			<folder>views</folder>
+	</files>
+
+	<languages folder='language'>
+		<language tag="en-GB">en-GB/en-GB.com_jforms.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.com_jforms.ini</language>
+		<language tag="de-DE">de-DE/de-DE.com_jforms.ini</language>
+		<language tag="it-IT">it-IT/it-IT.com_jforms.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.com_jforms.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.com_jforms.ini</language>
+	</languages>
+
+	<install><sql><file charset="utf8" driver="mysql">installation/install.sql</file></sql></install>
+	<installfile>installation/install.php</installfile>
+	
+	<uninstall><sql><file charset="utf8" driver="mysql">installation/uninstall.sql</file></sql></uninstall>	
+	<uninstallfile>installation/uninstall.php</uninstallfile>
+
+	<administration>
+		<menu>JForms</menu>
+		<files folder="/">
+			<filename>plugins/content/jforms.php</filename>
+			<filename>plugins/content/jforms.xml</filename>
+		</files>
+	
+		<files folder="/">  
+			<folder>media/com_jforms</folder>
+		</files> 
+	
+		<files folder="administrator/components/com_jforms">
+		
+			<filename>globals.php</filename>
+			<filename>index.html</filename>
+			<filename>jforms.php</filename>
+
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>tables</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>helpers</folder>
+			<folder>elements</folder>
+			<folder>installation</folder>
+			<folder>libraries</folder>
+						
+
+			<folder>plugins/storage</folder>
+			<folder>plugins/export</folder>
+			<folder>plugins/elements</folder>
+			
+		</files>		
+		
+		<languages folder='administrator/language'>
+			<language tag="en-GB">en-GB/en-GB.com_jforms.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_jforms.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_jforms.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_jforms.ini</language>
+			<language tag="pl-PL">pl-PL/pl-PL.com_jforms.ini</language>
+			<language tag="pt-PT">pt-PT/pt-PT.com_jforms.ini</language>
+		</languages>
+	
+	</administration>
+</install>

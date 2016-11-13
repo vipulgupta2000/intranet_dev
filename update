@@ -1,0 +1,56 @@
+<?php
+ob_start();
+$pageid=isset($_GET['id'])?$_GET['id'] : 3;
+
+//echo rowaccess($pageid,'pages');
+$sql="select catid from pages where id=$pageid";
+$result=mysql_query($sql);
+$myvar=mysql_result($result,0);
+$mod=0;$sub=0;
+// Check Category Level permission
+if($_SESSION['SESS_perm']!=='admin')
+{	if(rowaccess($myvar,'category')==1)
+	{
+	if(rowaccess($myvar,'category','modify')==1)
+	{$mod=1;}
+	if(rowaccess($myvar,'category','submit')==1)
+	{$sub=1;}
+	$flag=edit($pageid,$mod);
+	if(($flag==0))
+	comments($pageid);
+	//cleartext();
+
+	}else
+	{
+	echo "<h2>You do not have access to view articles for this category</h2>";
+echo "<p><a href=\"javascript:history.go(-1)\"><big>Go Back to Application</big></a></p>";
+
+	}
+	
+}
+
+//if($_SESSION['SESS_perm']=='admin')
+else
+{
+$flag=edit($pageid,$mod);
+	if(($flag==0))
+	comments($pageid);
+//cleartext();
+
+
+}
+
+
+// Check Row Level permission
+//if($_SESSION['SESS_perm']!=='admin' && rowaccess($pageid,'pages')==0)
+//{header("location:accessdenied.php");
+//}
+
+
+//qualaccess('category');
+
+ob_end_flush();
+
+?>
+
+

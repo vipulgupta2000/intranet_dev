@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* JForms Form XML File
+*
+* @version		$Id: form.xml 318 2009-09-08 10:15:07Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Form Edit Form</name>
+	
+	<params addpath="/administrator/components/com_jforms/elements">
+		<param name="title" stuff='hello' type="text" size="20" default="" label="Title" description="FORMTITLE" />
+		<param name="state" type="list" size="20" default="1" label="Published" description="FORMPUBLISH">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="type" type="list" size="20" default="0" label="Type" description="FORMTYPE">
+			<option value="0">Normal</option>
+			<option value="1">Profile</option>
+		</param>
+		<param name="publish_up" type="calendar" default="" label="Start Publishing" description="FORMPUBLISHSTART" />
+		<param name="publish_down" type="calendar" default="" label="Finish Publishing" description="FORMPUBLISHFINISH" />
+		<param name="maximum" type="text" size="20" default="0" label="Maximum records" description="FORMMAXIMUM" />
+		<param name="theme" type="jformstheme" default="default" label="Theme" description="FORMTHEME" />
+		<param name="groups" type="jformsusergroup" default="0,29,18,19,20,21,30,23,24,25" label="Allowed user groups" description="FORMGROUPS" />
+		<param name="plugins" type="jformsstorageplugins" default="Database,Mail" label="Active plugins" description="FORMPLUGINS" />
+	</params>
+</form>

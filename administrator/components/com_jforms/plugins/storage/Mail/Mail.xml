@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Mail plugin
+*
+* @version		$Id: Mail.xml 29 2008-12-09 07:13:01Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='storage'>
+<name>Mail</name>
+<description>Sends notifications to Administrators and users</description>
+</JFormPlugin>

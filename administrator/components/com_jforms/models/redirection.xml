@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* JForms Form XML File
+*
+* @version		$Id: redirection.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Redirections Form</name>
+	<params addpath="/administrator/components/com_jforms/elements">
+		<param name="thank"    type="textarea" rows="5" cols="25" label="'Thank You' page link"    description="REDIRECTIONTHANK" />
+		<param name="expired"  type="textarea" rows="2" cols="25" label="'Form Expired' page link" description="REDIRECTIONEXPIRED" />
+		<param name="not_auth" type="textarea" rows="2" cols="25" label="'Not authorized' page link" description="REDIRECTIONNOTAUTH" />
+	</params>
+</form>

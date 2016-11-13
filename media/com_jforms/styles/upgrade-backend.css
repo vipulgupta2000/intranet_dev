@@ -1,0 +1,45 @@
+.icon-48-jforms-upgrade{
+	background-image: url('../images/icon-48-upgrade.png'); 	
+}
+
+div.version{
+	color:green;
+	font-size:200%;
+	float:right;
+	border-left:2px solid silver;
+	border-right:2px solid silver;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+div.red{
+	color:red;
+}
+
+div.large-message{
+	font-size:200%;
+	text-align:center;
+}
+
+div.notice
+{
+	border-top:1px solid silver;
+	margin-top:20px;
+	text-align:center;
+	font-weight:bold;
+	color:#aa0000;
+}
+
+div.upgrading{
+	font-size: 120%;
+	font-weight:bold;
+	padding-left:15px;
+}
+
+span.ok{
+	color:green;
+}
+
+span.fail{
+	color:red;
+}

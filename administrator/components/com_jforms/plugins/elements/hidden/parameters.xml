@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for Hidden plugin
+*
+* @version		$Id: parameters.xml 381 2010-04-22 12:26:57Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Hidden plugin parameters</name>
+	<params>
+		<param name="hash" class='id' description='JFORMSPLUGINFIELDID'  label="ID" type="text" valueType='string' default='' translate='0' />
+		<param name="label" label="Label" description='JFORMSPLUGINFIELDLABEL' type="text" default='Hidden field' valueType='string' translate='0' />
+		<param name="defaultValue" label="Default Value" description='JFORMSHIDDENVALUE' type="text" default='No Value' valueType='string' translate='0' />
+	</params>
+</form>

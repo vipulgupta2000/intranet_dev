@@ -1,0 +1,14 @@
+/**
+* Stylesheet for design view for IE
+*
+* @version		$Id: design-backend.css 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+*/
+
+
+body{;}
+#clist{position:relative;}
+ul.toolbar-category li div.controls{position:relative;}

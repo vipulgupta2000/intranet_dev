@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Welcome to Intranet</title>
+	<link rel="stylesheet" type="text/css" href="../css/templateblue.css" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="../css/style.css" rel="stylesheet"/>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	
+	<script type="text/javascript">
+	function foo(){
+		var empid = document.getElementById('for_empid').value;
+		var employeename = document.getElementById('for_empname').value;
+		var email = document.getElementById('for_email').value;
+			if(empid == ""){
+				alert("Please Enter Employee ID...!!!");return false;
+			}
+			else if(!empid.match(/^[0-9]+$/)){
+				alert("Please Enter Only Numbers in Employee ID...!!!");return false;
+			}
+			else if(employeename == ""){
+				alert("Please Enter Employee Name...!!!");return false;
+			}
+			else if(!employeename.match(/^[a-zA-Z\s]+$/)){
+				alert("Please Enter Only Characters in EmpName...!!!");return false;
+			}
+			else if(email == ""){
+				alert("Please Enter Email ID...!!!");return false;
+			}			
+			else if(!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+			alert("Please Enter Valid Email ID...!!!");return false;
+			}
+	}
+	</script>	
+</head>
+
+<body>
+<center>
+<div id="box">
+
+	<div id="top">
+	<div id="top_left">
+	<img id="img" src="../images/logo.png" alt="Input Zero" />
+	</div>
+	<div id="top_middle">
+	<font face="times new roman">Welcome To Salary Management</font>
+	</div>
+	</div>
+
+	<div id="middle">
+	<br /><br /><br /><br /><br />
+	<table border="1" cellpadding="0" cellspacing="1">
+	<tr>
+	<form method="POST" action="check.php">
+	<td>
+	<table width="100%" border="1" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+	<tr>
+	<td colspan="3"><center><strong>Forgot Password</strong></center></td>
+	</tr>
+
+	<tr>
+	<td width="100%">Employee ID:</td>
+	<td width="250"><input name="for_empid" type="text" id="for_empid" size="40"></td>
+	</tr>
+	
+	<tr>
+	<td width="100%">Employee Name:</td>
+	<td width="250"><input name="for_empname" type="text" id="for_empname" size="40"></td>
+	</tr>
+
+	<tr>
+	<td width="100%">Email ID:</td>
+	<td width="250"><input name="for_email" type="text" id="for_email" size="40"></td>
+	</tr>
+
+	<tr>
+	<td colspan=2><center><input id='btn' type="submit" name="sent" value="Send" onclick="return foo();"></center></td>
+	</tr>
+	</table>
+	</td>
+	</form>
+	</tr>
+	</table>
+	</div>
+	<div id="footer">
+	&copy Input Zero Technologies Pvt. Ltd.
+	</div>
+
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<?php
+
+function approve(){
+$tbl="pages";
+$pageid=isset($_GET['id'])?$_GET['id'] : 3;
+
+$sql="select id,catid,page,author,time,title,link from $tbl where id=$pageid";
+$cat=category();
+$result=mysql_query($sql);
+
+while($row=mysql_fetch_array($result)){
+echo "<h2>".strtoupper($cat[$row['catid']])."</h2>";
+echo "<br/ ><b>Author : ".$row['author']."</b>";
+echo "<br/><b>Created/Updated At : ".getmytime($row['time'])."</b>";
+echo "<p/>&nbsp &nbsp ".$row['page'];
+//echo "<p/>&nbsp &nbsp ".$row['link'];
+
+
+
+echo "<input class=\"btn btn-success\" id=\"btn\" type=\"submit\" name=\"approve\" value=\"Approve\">";
+echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+echo "<input class=\"btn btn-danger\" id=\"btn\" type=\"submit\" name=\"discard\" value=\"Discard\">";
+echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+echo "<a href=\"javascript:history.go(-1)\"><big> Back </big></a>";
+if(isset($_POST['approve']))
+{
+if($row['link']!=0)
+{
+$message = isset($row['page']) ? addslashes($row['page']) : 'Message';
+//echo 'hhhh'.$message;
+$title=isset($row['title']) ? addslashes($row['title']) : 'Title';
+$title=cleanup($title);
+$message_filter=cleanup($message);
+$message_filter=strtolower($cat[$category])." ".$title.$message_filter;
+
+
+
+//$message_filter=preg_replace('|[^a-zA-Z0-9_,\s\t\r]|', '', $message_filter);
+//$message_filter=strtolower ( $message_filter );
+$date=time();
+$sql="update $tbl set page='$message',page_filter='$message_filter',status='published', modified_by='$row[author]',time='$date' where id='$row[link]'";
+
+
+$sql1="delete from pages where id=$pageid";
+
+$result=mysql_query($sql)or  die(mysql_error());
+$result1=mysql_query($sql1) or  die(mysql_error());
+//header("Location:home.php?page=approval");
+echo "<meta http-equiv='refresh' content='0;url=home.php?page=approval'>";
+
+exit();
+
+}
+
+else
+{
+
+$sql="update $tbl set status='published' where id=$pageid";
+//echo $sql;
+$result=mysql_query($sql)or  die(mysql_error());
+//header("Location: home.php?page=approval");
+echo "<meta http-equiv='refresh' content='0;url=home.php?page=approval'>";
+exit();
+}
+}
+
+if(isset($_POST['discard'])){
+$sql="delete from pages where id=$pageid";
+
+if(!$result=mysql_query($sql))
+{ die(mysql_error());}
+//header("location: home.php?page=approval");
+echo "<meta http-equiv='refresh' content='0;url=home.php?page=approval'>";
+}
+
+}}
+
+
+$pageid=isset($_GET['id'])?$_GET['id'] : 3;
+$sql="select catid from pages where id=$pageid";
+$result=mysql_query($sql);
+$myvar=mysql_result($result,0);
+
+if($_SESSION['SESS_perm']!=='admin')
+{	if(rowaccess($myvar,'category')==1)
+	{
+approve();
+}else
+	{
+	echo "<h2>You do not have access to view articles for this category</h2>";
+echo "<p><a href=\"javascript:history.go(-1)\"><big>Go Back to Application</big></a></p>";
+
+	}
+
+}
+else
+{
+
+approve();
+}
+
+?>
+

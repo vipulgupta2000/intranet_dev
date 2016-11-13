@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - JForms</name>
+	<author>Mostafa Muhammad</author>
+	<creationDate>September 2009</creationDate>
+	<copyright>Copyright (C) 2009  Mostafa Muhammad. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>Mostafa.mohmmed@gmail.com</authorEmail>
+	<authorUrl>http://jforms.mosmar.com/</authorUrl>
+	<version>0.7</version>
+	<description></description>
+	<files>
+		<filename plugin="jforms">jforms.php</filename>
+	</files>
+	<params></params>
+</install>

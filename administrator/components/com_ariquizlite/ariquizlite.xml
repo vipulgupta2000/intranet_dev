@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>ARI Quiz Lite</name>
+	<creationDate>April 2011</creationDate>
+	<author>ARI Soft</author>
+	<copyright>ARI Soft</copyright>
+	<authorEmail>info@ari-soft.com</authorEmail>
+	<authorUrl>www.ari-soft.com</authorUrl>
+	<version>1.1.3</version>
+	<description>COM_ARIQUIZLITE_DESCR</description>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<installfile>install.ariquizlite.php</installfile>
+	<uninstallfile>uninstall.ariquizlite.php</uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+	</uninstall>
+	<files folder="frontend">
+		<folder>css/</folder>
+		<folder>frontend_pages/</folder>
+		<folder>images/</folder>
+		<folder>view/</folder>
+		<folder>views/</folder>
+		<filename>ariquizlite.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<administration>
+	    <menu link="com_arquizlite">ARI Quiz Lite</menu>
+	    <submenu>
+	    	<menu link="option=com_ariquizlite&amp;task=quiz_list" task="quiz_list">Quizzes</menu>
+			<menu link="option=com_ariquizlite&amp;task=category_list" task="category_list">Quiz Categories</menu>
+			<menu link="option=com_ariquizlite&amp;task=questioncategory_list" task="questioncategory_list">Question Categories</menu>
+			<menu link="option=com_ariquizlite&amp;task=qtemplate_list" task="qtemplate_list">Question Templates</menu>
+			<menu link="option=com_ariquizlite&amp;task=texttemplate_list" task="texttemplate_list">Text Templates</menu>
+			<menu link="option=com_ariquizlite&amp;task=results" task="results">Quiz Results</menu>
+			<menu link="option=com_ariquizlite&amp;task=lang_backend" task="lang_backend">Languages</menu>
+			<menu link="option=com_ariquizlite&amp;task=lang_frontend" task="lang_frontend">Languages Frontend</menu>
+			<menu link="option=com_ariquizlite&amp;task=templates" task="templates">Templates</menu>
+			<menu link="option=com_ariquizlite&amp;task=help" task="help">Help</menu>
+			<menu link="option=com_ariquizlite&amp;task=faq" task="faq">F.A.Q.</menu>
+			<menu link="option=com_ariquizlite&amp;task=about" task="about">About</menu>
+	    </submenu>
+	    <languages folder="languages">
+			<language tag="en-GB">en-GB/en-GB.com_ariquizlite.ini</language>
+		</languages>
+	    <files folder="backend">
+			<folder>ajax/</folder>
+			<folder>cache/</folder>
+			<folder>css/</folder>
+			<folder>i18n/</folder>
+			<folder>images/</folder>
+			<folder>install/</folder>
+			<folder>js/</folder>
+			<folder>elements/</folder>
+			<folder>kernel/</folder>
+			<folder>modules/</folder>
+			<folder>pages/</folder>
+			<folder>templates/</folder>
+			<folder>utils/</folder>
+			<filename>admin.ariquizlite.php</filename>
+			<filename>toolbar.ariquizlite.php</filename>
+			<filename>toolbar.ariquizlite.html.php</filename>
+			<filename>index.html</filename>
+		</files>
+	</administration>
+</install>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for textarea plugin
+*
+* @version		$Id: textarea.xml 268 2009-08-27 20:42:19Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+	<name>textarea</name>
+	<description>TEXTAREAPLUGINDESCRIPTION</description>
+	<files>
+		<file type='jsEntryPoint'>textarea.js</file>
+		<file type='phpEntryPoint'>textarea.php</file>
+		<file type='icon'>textarea.png</file>
+	</files>
+	<storage type='textfield' size='10000' requirefs='false' />
+</JFormPlugin>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for CSV plugin
+*
+* @version		$Id: Csv.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='export'>
+<name>Csv</name>
+<description>Exports Data as Comma separated values (CSV)</description>
+<format>raw</format>
+</JFormPlugin>

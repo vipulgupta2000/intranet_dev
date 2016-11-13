@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for File plugin
+*
+* @version		$Id: parameters.xml 381 2010-04-22 12:26:57Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>File plugin parameters</name>
+	<params>
+		<param name="hash" class='id' description='JFORMSPLUGINFIELDID'  label="ID" type="text" valueType='string' default='' translate='0' />
+		<param name="label" description='JFORMSPLUGINFIELDLABEL' label="Label" type="text" default='Upload' valueType='string' translate='1' />
+		<param name="css" description='JFORMSPLUGINFIELDCSS' label="CSS Class" type="text" default='jffile' valueType='string' translate='0' />
+		<param name="useCss" description='JFORMSPLUGINFIELDUSECSS' label="Style using CSS only" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="maxSize" description='JFORMSFILEMAXSIZE' label="Maximum Size(MB)" type="text" default='0.5' valueType='string' translate='0' />
+		<param name="required" description='JFORMSPLUGINFIELDREQUIRED' label="Required" type="list" default='0' valueType='integer' translate='0'>
+			<option value='1'>Yes</option>
+			<option value='0'>No</option>
+		</param>
+		<param name="extensions" description='JFORMSFILEEXTENSIONS' label="Extensions" type="text" default='jpg,gif,png' valueType='string' translate='0' />
+		<param name="veryBadExtensions" description='JFORMSFILEVBADEXTENSIONS' label="veryBadExtensions" default='php,php3,php4,ph3,ph4' valueType='string' type='hidden' translate='0' /> 
+		<param name="lh" type="hidden" valueType='integer' default='20' translate='0' />
+		<param name="lw" type="hidden" valueType='integer' default='50' translate='0' />
+	</params>
+</form>

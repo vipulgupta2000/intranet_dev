@@ -1,0 +1,43 @@
+<div id="middle_right_top">
+<h2>IZT WIKI</h2>
+</div>
+
+<?php
+
+$tbl="pages";
+
+
+echo "Qual:<input type=\"text\" name=\"qual\" value=\"\" />";
+
+echo"<p>";
+echo"</p>";
+echo "<input type=\"hidden\" name=\"tbl\" value=\"".$tbl."\" />";
+if($_SESSION['SESS_perm']!=='admin'){
+$qual=isset($_POST['qual'])?$_POST['qual']:"status='draft'";
+$qual=$qual." and "." catid in (".qualaccess('category').")";
+}
+else
+{
+$qual=isset($_POST['qual'])?$_POST['qual']:"status='draft'";
+}
+echo $qual;
+//time>1398317608
+//$tbl='appraisal_master';
+$field_edit=array('status');
+$field_show=array('id','author','status','time','link','title');
+$link="home.php?page=approve&id=";
+
+if(isset($_POST['modify']) || isset($_POST['update']))
+{
+echo input($tbl,$qual,$field_edit,$field_show,$link);
+
+}else
+{
+//$qual="status='draft' ORDER BY time DESC";
+echo display_link($tbl,$qual,1,$field_show,$link);
+//addrow($tbl);
+}
+
+
+
+?>

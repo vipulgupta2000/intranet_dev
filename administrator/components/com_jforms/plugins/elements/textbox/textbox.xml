@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for textbox plugin
+*
+* @version		$Id: textbox.xml 362 2010-02-20 06:50:23Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+	<name>textbox</name>
+	<description>TEXTBOXPLUGINDESCRIPTION</description>
+	<files>
+		<file type='jsEntryPoint'>textbox.js</file>
+		<file type='phpEntryPoint'>textbox.php</file>
+		<file type='icon'>textbox.png</file>
+	</files>
+	<storage type='textfield' size='254' requirefs='false' />
+</JFormPlugin>
